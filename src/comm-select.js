@@ -38,6 +38,14 @@ export class CustomSelect extends LitElement {
     return slot.assignedElements({ flatten: true });
   }
 
+  updated(changedProperties) {
+    if (changedProperties.has('value')) {
+      const value = changedProperties.value;
+      console.log({ changedProperties, value });
+      //this._measureDOM();
+    }
+  }
+
   handleSlotchange(e) {
     const childNodes = e.target.assignedNodes({ flatten: true });
     // ... do something with childNodes ...

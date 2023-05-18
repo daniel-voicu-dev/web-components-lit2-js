@@ -7,6 +7,6 @@
 
 document.querySelectorAll('comm-select').forEach((n) =>
   n.addEventListener('change', () => {
-    alert('change registered');
+    console.log('change registered');
   })
 );
