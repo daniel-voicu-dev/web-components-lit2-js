@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + Lit</title>
+    <link rel="stylesheet" href="./src/index.css" />
+    <!-- <script type="module" src="/src/my-element.js"></script> -->
+    <script type="module" src="/src/comm-product-selector.js"></script>
+    <script type="module" src="/src/comm-file-input.js"></script>
+    <script type="module" src="/src/comm-option.js"></script>
+    <script type="module" src="/src/comm-select.js"></script>
+
+    <script src="/src/index.js" defer></script>
+  </head>
+  <body>
+    <!-- <comm-product-selector
+      url="https://jsonplaceholder.typicode.com/comments?postId="
+      style="--comm-border-radius: 0"
+    ></comm-product-selector> -->
+
+    <!-- <comm-file-input name="test" id="test" multiple></comm-file-input> -->
+    <div style="width: 90vw; margin: 0 auto">
+      <comm-select
+        name="select"
+        id="select"
+        value="East"
+        placeholder="Fill in your value"
+        style="margin-bottom: 10px"
+      >
+        <comm-option label="East" value="East">East</comm-option>
+        <comm-option label="West" value="West">West</comm-option>
+        <comm-option label="North" value="North">North</comm-option>
+        <comm-option label="South" value="South">South</comm-option>
+      </comm-select>
+
+      <comm-select
+        name="select"
+        id="select"
+        value="East"
+        placeholder="Fill in your value"
+      >
+        <comm-option label="East" value="East">East</comm-option>
+        <comm-option label="West" value="West">West</comm-option>
+        <comm-option label="North" value="North">North</comm-option>
+        <comm-option label="South" value="South">South</comm-option>
+      </comm-select>
+    </div>
+  </body>
+</html>
